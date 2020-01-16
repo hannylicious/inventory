@@ -16,8 +16,6 @@ with open('QB inventory.csv', newline='') as qbinventorycsv:
     for row in reader:
         if row[7]:
             inventory.append({ 'description': row[0], 'availability': int(row[7])})
-        else:
-            inventory.append({ 'description': row[0], 'availability': 0 })
 
 # marry the data
 results = []
